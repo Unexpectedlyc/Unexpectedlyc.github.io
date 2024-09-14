@@ -27,6 +27,9 @@ $(function () {
   $("#love_text").append(config.loveText);
 });
 
-$(function () {
-  //$("#heart");
-});
+const hb = document.querySelector("#heart");
+if (hb) {
+  hb.addEventListener("click", function () {
+    window.location.href = "heart.html";
+  });
+}
