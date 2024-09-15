@@ -1,3 +1,10 @@
+const hb = document.querySelector("#heart");
+if (hb) {
+  hb.addEventListener("click", function () {
+    window.location.href = "heart.html";
+  });
+}
+
 $(function () {
   let dom = document.createElement("span");
   config.texts.forEach(function (item) {
@@ -12,6 +19,7 @@ $(function () {
     dom.appendChild(p);
   });
   $("#texts-container").append(dom.innerHTML);
+  //$("#heart").hide();
 });
 
 $(function () {
@@ -25,11 +33,5 @@ $(function () {
 
 $(function () {
   $("#love_text").append(config.loveText);
+  //$("#heart").show();
 });
-
-const hb = document.querySelector("#heart");
-if (hb) {
-  hb.addEventListener("click", function () {
-    window.location.href = "heart.html";
-  });
-}
